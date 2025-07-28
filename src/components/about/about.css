@@ -1,0 +1,156 @@
+/* ======= ABOUT SECTION CONTAINER ======= */
+.about {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ======= SECTION TITLE ======= */
+.section_title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* ======= MAIN CONTAINER FOR AVATAR + CONTENT ======= */
+.about_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem; /* Space between avatar and content */
+    max-width: 1100px;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--container-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-right: 50px;
+}
+
+.about_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid rgb(84, 3, 3);
+}
+
+/* ======= TEXT + BUTTON + SKILLS CONTAINER ======= */
+.about_content {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* spacing between description, button, and skills */
+}
+
+/* ======= DESCRIPTION TEXT ======= */
+.about_description {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ======= RESUME BUTTON ======= */
+.btn {
+    background-color: #ff4b4b;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e63b3b;
+}
+
+/* ======= SKILLS SECTION ======= */
+.about_skills {
+    display: grid;
+    row-gap: 2rem; /* space between individual skills */
+}
+
+/* ======= EACH SKILL ROW ======= */
+.skills_data {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ======= SKILL TITLE AND PERCENTAGE ======= */
+.skills_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.skills_name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.skills_number {
+    font-weight: 600;
+}
+
+/* ======= SKILL PROGRESS BAR ======= */
+.skills_bar {
+    background-color: aliceblue;
+    height: 7px;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.skills_percentage {
+    display: block;
+    height: 100%;
+    border-radius: 0.25rem;
+}
+
+/* ======= INDIVIDUAL SKILL COLORS + WIDTHS ======= */
+.development {
+    width: 90%;
+    background-color: gold;
+}
+
+.learning {
+    width: 80%;
+    background-color: orange;
+}
+
+.programming {
+    width: 90%;
+    background-color: cornflowerblue;
+}
+
+/* ======= RESPONSIVE DESIGN ======= */
+@media (max-width: 768px) {
+    .about_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about_content {
+        align-items: center;
+    }
+
+    .skills_title {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .skills_bar {
+        width: 100%;
+    }
+}

@@ -1,0 +1,52 @@
+.resume-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.timeline-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This centers the subtitle */
+}
+
+
+.resume_subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--title-color);
+}
+
+.center {
+  text-align: center;
+}
+
+.timeline {
+  background-color: var(--container-color);
+  padding: 1.875rem;
+  border-radius: var(--border-radius);
+  position: relative;
+  box-shadow: var(--shadow);
+}
+
+.timeline_item {
+  position: relative;
+  padding-left: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+
+.timeline_item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline_item::before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  position: absolute;
+  left: .25rem;
+  top: 0;
+}
