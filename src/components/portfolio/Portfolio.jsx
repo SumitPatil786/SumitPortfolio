@@ -10,7 +10,7 @@ const Portfolio = () => {
       id: 1,
       title: "LeaderBoard Web App",
       image: project1,
-      link: "leaderboard-nbiowujay-sumitpatil786s-projects.vercel.app",
+      link: "https://leaderboard-nbiowujay-sumitpatil786s-projects.vercel.app/",
       github: "https://github.com/SumitPatil786/leaderboard-app"
     },
     {
