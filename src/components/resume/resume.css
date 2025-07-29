@@ -1,3 +1,36 @@
+@media (max-width: 768px) {
+  .resume-container {
+    grid-template-columns: 1fr; /* Single column layout */
+    row-gap: 2rem; /* Space between timeline sections */
+    justify-items: center; /* Center content horizontally */
+    text-align: center;
+  }
+
+  .timeline-section {
+    align-items: center;
+  }
+
+  .timeline {
+    width: 100%;
+    max-width: 400px; /* Keeps it readable on small screens */
+    padding: 1.5rem;
+  }
+
+  .timeline_item {
+    padding-left: 2rem; /* Adjust left padding */
+  }
+
+  .resume_subtitle {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}
+
+.resume.section {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
 .resume-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -49,4 +82,10 @@
   position: absolute;
   left: .25rem;
   top: 0;
+}
+.section_title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
 }

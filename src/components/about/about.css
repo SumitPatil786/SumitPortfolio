@@ -1,4 +1,32 @@
 /* ======= ABOUT SECTION CONTAINER ======= */
+@media (max-width: 768px) {
+    .about_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: 0; /* remove hardcoded right margin */
+    }
+
+    .about_content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .about_description {
+        text-align: center;
+    }
+
+    .skills_title {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .skills_bar {
+        width: 100%;
+    }
+}
+
+
 .about {
     padding: 4rem 2rem;
     display: flex;
@@ -153,4 +181,8 @@
     .skills_bar {
         width: 100%;
     }
+}
+
+.about_description{
+    justify-content: center;
 }
