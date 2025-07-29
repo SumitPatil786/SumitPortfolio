@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem 1rem;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 :root {
   --first-color: hsl(106, 88%, 70%);
